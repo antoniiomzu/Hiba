@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Hiba · Diosa del don y la luz del desierto</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700&family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+<style>
+:root{
+  box-sizing:border-box;
+  padding-top:env(safe-area-inset-top,0px);
+  padding-bottom:env(safe-area-inset-bottom,0px);
+  --bg:#fbf3e4; --bg2:#f3e4c8; --card:#fffaf0; --ink:#2b1a14; --muted:#6b4f42;
+  --gold:#b8791f; --terra:#b5472a; --blue:#1f4e79; --line:#e2cfa8;
+  color-scheme:light;
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){
+    --bg:#140f1f; --bg2:#1d1530; --card:#221a36; --ink:#f4e9d2; --muted:#c3b39a;
+    --gold:#e3b04b; --terra:#e07a52; --blue:#6fa8dc; --line:#3a2d55; color-scheme:dark;
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#140f1f; --bg2:#1d1530; --card:#221a36; --ink:#f4e9d2; --muted:#c3b39a;
+  --gold:#e3b04b; --terra:#e07a52; --blue:#6fa8dc; --line:#3a2d55; color-scheme:dark;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:env(safe-area-inset-top,0px)}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:"Cormorant Garamond",Georgia,serif;font-size:1.2rem;line-height:1.65}
+h1,h2,h3{font-family:Cinzel,Georgia,serif;font-weight:700;letter-spacing:.08em;margin:0}
+a{color:var(--gold)}
+nav{position:sticky;top:env(safe-area-inset-top,0px);z-index:5;display:flex;gap:1.2rem;justify-content:center;flex-wrap:wrap;padding:.8rem 1rem;background:var(--bg);border-bottom:1px solid var(--line);font-family:Cinzel,serif;font-size:.85rem;letter-spacing:.12em}
+nav a{text-decoration:none;color:var(--ink)}
+nav a:hover{color:var(--gold)}
+.hero{text-align:center;padding:5rem 1.2rem 4.5rem;background:radial-gradient(circle at 50% 30%,var(--bg2),var(--bg) 70%)}
+.sym{font-size:4.5rem;color:var(--gold);line-height:1;text-shadow:0 0 30px var(--gold)}
+.hero h1{font-size:clamp(3.5rem,14vw,7rem);color:var(--terra);margin:.4rem 0 .2rem;letter-spacing:.2em}
+.hero p{max-width:34rem;margin:.6rem auto;color:var(--muted);font-style:italic;font-size:1.35rem}
+.btn{display:inline-block;margin-top:1.4rem;padding:.7rem 1.8rem;border:1px solid var(--gold);color:var(--gold);text-decoration:none;font-family:Cinzel,serif;letter-spacing:.15em;font-size:.85rem;border-radius:2px}
+.btn:hover{background:var(--gold);color:var(--bg)}
+.band{height:18px;background:repeating-linear-gradient(90deg,var(--terra) 0 24px,var(--gold) 24px 48px,var(--blue) 48px 72px)}
+section{max-width:60rem;margin:0 auto;padding:4rem 1.4rem}
+section h2{text-align:center;font-size:1.8rem;color:var(--gold);margin-bottom:1.6rem}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(14rem,1fr));gap:1.2rem}
+.card{background:var(--card);border:1px solid var(--line);padding:1.4rem;border-radius:4px;border-top:3px solid var(--terra)}
+.card h3{font-size:1rem;color:var(--terra);margin-bottom:.4rem}
+.card p{margin:0;font-size:1.1rem;color:var(--muted)}
+.quote{text-align:center;font-style:italic;font-size:1.6rem;padding:3rem 1.4rem;background:var(--bg2);color:var(--ink)}
+.quote span{display:block;font-size:1rem;color:var(--muted);margin-top:.6rem;font-style:normal;font-family:Cinzel,serif;letter-spacing:.1em}
+ul.rit{list-style:none;padding:0;margin:0 auto;max-width:36rem}
+ul.rit li{padding:.8rem 0 .8rem 2rem;border-bottom:1px solid var(--line);position:relative}
+ul.rit li::before{content:"✦";position:absolute;left:0;color:var(--gold)}
+footer{text-align:center;padding:2.5rem 1rem 3rem;color:var(--muted);font-size:1rem;border-top:1px solid var(--line)}
+</style>
+</head>
+<body>
+<nav>
+  <a href="#leyenda">LEYENDA</a><a href="#dominios">DOMINIOS</a><a href="#simbolos">SÍMBOLOS</a><a href="#ofrendas">OFRENDAS</a>
+</nav>
+
+<header class="hero">
+  <div class="sym" aria-hidden="true">ⵣ</div>
+  <h1>HIBA</h1>
+  <p>Diosa del don y de la luz del desierto, guardiana de las caravanas entre el Atlas y el mar.</p>
+  <a class="btn" href="#leyenda">DESCUBRE SU LEYENDA</a>
+</header>
+<div class="band"></div>
+
+<section id="leyenda">
+  <h2>La leyenda</h2>
+  <p>Dicen los pastores del Atlas que, antes de que existieran las ciudades, el desierto era silencio y sed. Entonces, una noche sin luna, una mujer envuelta en una tela azul índigo descendió de las cumbres. Cada paso suyo dejaba una huella de agua; de cada huella brotaba un palmeral.</p>
+  <p>Su nombre era Hiba, que significa «regalo». Enseñó a las tribus a tejer, a leer las estrellas y a compartir el pan con el viajero. Desde entonces, quien ofrece agua a un desconocido lleva un fragmento de su luz.</p>
+  <p><em>Nota: Hiba es una figura imaginada para esta página, inspirada en la cultura amazigh y marroquí.</em></p>
+</section>
+
+<div class="quote">«Quien da sin esperar, nunca camina solo por la arena.»<span>— PROVERBIO DE HIBA</span></div>
+
+<section id="dominios">
+  <h2>Sus dominios</h2>
+  <div class="grid">
+    <div class="card"><h3>LA LUZ</h3><p>Guía a las caravanas al amanecer sobre las dunas de Merzouga.</p></div>
+    <div class="card"><h3>EL AGUA</h3><p>Hace brotar oasis, fuentes y los ríos escondidos del Atlas.</p></div>
+    <div class="card"><h3>LA HOSPITALIDAD</h3><p>Protege la mesa compartida, el té de menta y la puerta abierta.</p></div>
+    <div class="card"><h3>EL TEJIDO</h3><p>Bendice las manos que trenzan alfombras, zellige y cerámica.</p></div>
+  </div>
+</section>
+
+<section id="simbolos">
+  <h2>Sus símbolos</h2>
+  <div class="grid">
+    <div class="card"><h3>ⵣ  EL YAZ</h3><p>La letra amazigh del «hombre libre», su emblema principal.</p></div>
+    <div class="card"><h3>✦  LA ESTRELLA</h3><p>La estrella de ocho puntas del zellige, orden y armonía.</p></div>
+    <div class="card"><h3>☾  LA LUNA</h3><p>Una media luna que vela las noches del Sáhara.</p></div>
+    <div class="card"><h3>🌴  LA PALMERA</h3><p>Vida, sombra y abundancia en medio de la arena.</p></div>
+  </div>
+</section>
+
+<section id="ofrendas">
+  <h2>Ofrendas y costumbres</h2>
+  <ul class="rit">
+    <li>Servir té de menta a quien llega, sin preguntar de dónde viene.</li>
+    <li>Dejar dátiles y agua en el camino para el viajero.</li>
+    <li>Encender una lámpara de latón al caer la tarde.</li>
+    <li>Regalar algo hecho a mano una vez al año.</li>
+  </ul>
+</section>
+
+<div class="band"></div>
+<footer>ⵣ Hiba · Diosa del don y de la luz del desierto ⵣ<br>Una página de inspiración mítica, abierta a todo el mundo.</footer>
+</body>
+</html>
